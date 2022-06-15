@@ -1,0 +1,168 @@
+ERROR - 2022-06-15 09:24:51 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-06-15 09:24:51 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`', [], false)
+ 3 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-15 10:11:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+CRITICAL - 2022-06-15 10:11:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `uts` `pwl`.`barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uts` `pwl`.`barang`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-15 10:11:26 --> Table 'uts_pwl.barang' doesn't exist
+CRITICAL - 2022-06-15 10:11:26 --> Table 'uts_pwl.barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `uts_pwl`.`barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uts_pwl`.`barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uts_pwl`.`barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uts_pwl`.`barang`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-15 10:11:27 --> Table 'uts_pwl.barang' doesn't exist
+CRITICAL - 2022-06-15 10:11:27 --> Table 'uts_pwl.barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `uts_pwl`.`barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uts_pwl`.`barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uts_pwl`.`barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uts_pwl`.`barang`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-15 10:13:28 --> Undefined property: stdClass::$Id_brg
+in APPPATH\Controllers\Mahasiswa.php on line 25.
+ 1 APPPATH\Controllers\Mahasiswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Id_brg', 'APPPATH\\Controllers\\Mahasiswa.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-15 10:13:30 --> Undefined property: stdClass::$Id_brg
+in APPPATH\Controllers\Mahasiswa.php on line 25.
+ 1 APPPATH\Controllers\Mahasiswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Id_brg', 'APPPATH\\Controllers\\Mahasiswa.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-15 10:13:31 --> Undefined property: stdClass::$Id_brg
+in APPPATH\Controllers\Mahasiswa.php on line 25.
+ 1 APPPATH\Controllers\Mahasiswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Id_brg', 'APPPATH\\Controllers\\Mahasiswa.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-15 10:13:32 --> Undefined property: stdClass::$Id_brg
+in APPPATH\Controllers\Mahasiswa.php on line 25.
+ 1 APPPATH\Controllers\Mahasiswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Id_brg', 'APPPATH\\Controllers\\Mahasiswa.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-15 10:16:08 --> Table 'penjualan.barang2' doesn't exist
+CRITICAL - 2022-06-15 10:16:08 --> Table 'penjualan.barang2' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `penjualan`.`barang2`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `penjualan`.`barang2`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `penjualan`.`barang2`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penjualan`.`barang2`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-15 10:16:09 --> Table 'penjualan.barang2' doesn't exist
+CRITICAL - 2022-06-15 10:16:09 --> Table 'penjualan.barang2' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `penjualan`.`barang2`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `penjualan`.`barang2`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `penjualan`.`barang2`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penjualan`.`barang2`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-15 10:16:17 --> Undefined property: stdClass::$Id_brg
+in APPPATH\Controllers\Mahasiswa.php on line 25.
+ 1 APPPATH\Controllers\Mahasiswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Id_brg', 'APPPATH\\Controllers\\Mahasiswa.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-15 10:16:18 --> Undefined property: stdClass::$Id_brg
+in APPPATH\Controllers\Mahasiswa.php on line 25.
+ 1 APPPATH\Controllers\Mahasiswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Id_brg', 'APPPATH\\Controllers\\Mahasiswa.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-15 10:17:11 --> Undefined property: stdClass::$id_brg
+in APPPATH\Controllers\Mahasiswa.php on line 25.
+ 1 APPPATH\Controllers\Mahasiswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_brg', 'APPPATH\\Controllers\\Mahasiswa.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-15 10:17:13 --> Undefined property: stdClass::$id_brg
+in APPPATH\Controllers\Mahasiswa.php on line 25.
+ 1 APPPATH\Controllers\Mahasiswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_brg', 'APPPATH\\Controllers\\Mahasiswa.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,294 @@
+CRITICAL - 2022-06-14 07:50:08 --> Class "Models\DataModel" not found
+in APPPATH\Controllers\Mahasiswa.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(860): App\controllers\Mahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-14 07:54:02 --> Class "Models\DataModel" not found
+in APPPATH\Controllers\Mahasiswa.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(860): App\controllers\Mahasiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 08:13:58 --> Error connecting to the database: Unknown database 'test'
+CRITICAL - 2022-06-14 08:13:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'test'
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 3 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 08:14:55 --> Error connecting to the database: Unknown database 'test'
+CRITICAL - 2022-06-14 08:14:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'test'
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 3 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 08:55:25 --> Error connecting to the database: Unknown database 'pertemuan_11'
+CRITICAL - 2022-06-14 08:55:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pertemuan_11'
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 3 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 08:58:26 --> Table 'pertemuan11.mahasisswa' doesn't exist
+CRITICAL - 2022-06-14 08:58:26 --> Table 'pertemuan11.mahasisswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mahasisswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasisswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasisswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 5 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 09:00:34 --> Table 'test.mahasisswa' doesn't exist
+CRITICAL - 2022-06-14 09:00:34 --> Table 'test.mahasisswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mahasisswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasisswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasisswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 5 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 09:00:35 --> Table 'test.mahasisswa' doesn't exist
+CRITICAL - 2022-06-14 09:00:35 --> Table 'test.mahasisswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mahasisswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasisswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasisswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 5 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 09:17:05 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-06-14 09:17:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 3 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 09:19:48 --> Table 'test.mahasisswa' doesn't exist
+CRITICAL - 2022-06-14 09:19:48 --> Table 'test.mahasisswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mahasisswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasisswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasisswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 5 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 09:20:50 --> Table 'test.mahasisswa' doesn't exist
+CRITICAL - 2022-06-14 09:20:50 --> Table 'test.mahasisswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mahasisswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasisswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasisswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 5 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 09:20:51 --> Table 'test.mahasisswa' doesn't exist
+CRITICAL - 2022-06-14 09:20:51 --> Table 'test.mahasisswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mahasisswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasisswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasisswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 5 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 09:29:07 --> Table 'test.mahasisswa' doesn't exist
+CRITICAL - 2022-06-14 09:29:07 --> Table 'test.mahasisswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mahasisswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasisswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasisswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasisswa`', [], false)
+ 5 APPPATH\Models\Datamodel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(16): App\Models\Datamodel->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-14 10:33:56 --> Undefined variable $data
+in APPPATH\Controllers\Mahasiswa.php on line 17.
+ 1 APPPATH\Controllers\Mahasiswa.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Mahasiswa.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 11:35:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+CRITICAL - 2022-06-14 11:35:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `uts` `pwl`.`barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uts` `pwl`.`barang`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 11:36:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+CRITICAL - 2022-06-14 11:36:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `uts` `pwl`.`barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uts` `pwl`.`barang`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 11:36:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+CRITICAL - 2022-06-14 11:36:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `uts` `pwl`.`barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uts` `pwl`.`barang`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 11:36:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+CRITICAL - 2022-06-14 11:36:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `uts` `pwl`.`barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uts` `pwl`.`barang`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-14 11:36:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+CRITICAL - 2022-06-14 11:36:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`barang`' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `uts` `pwl`.`barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uts` `pwl`.`barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uts` `pwl`.`barang`', [], false)
+ 5 APPPATH\Models\Datamodel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Mahasiswa.php(22): App\Models\Datamodel->getDataBarang()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\controllers\Mahasiswa->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\controllers\Mahasiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
